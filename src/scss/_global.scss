@@ -24,6 +24,54 @@
 
 // Body Locked
 body {
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .title {
+    font-family: 'Bree Serif';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 80px;
+    letter-spacing: -1px;
+    color: #02073e;
+    @media (max-width: $breakpoint1450) {
+      font-size: 54px;
+      line-height: 64px;
+    }
+    @media (max-width: $breakpoint768) {
+      font-size: 36px;
+      line-height: 52px;
+    }
+    @media (max-width: $breakpoint480) {
+      font-size: 24px;
+      line-height: 32px;
+    }
+  }
+
+  .text {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 42px;
+    color: #02073e;
+    @media (max-width: $breakpoint1450) {
+      font-size: 16px;
+      line-height: 34px;
+    }
+    @media (max-width: $breakpoint768) {
+      font-size: 14px;
+      line-height: 28px;
+    }
+    @media (max-width: $breakpoint480) {
+      font-size: 12px;
+      line-height: 18px;
+    }
+  }
+
   background-color: #ffffff;
   &.locked {
     overflow: hidden;

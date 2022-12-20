@@ -158,6 +158,9 @@ nav {
   .menu__item {
     margin-top: 15px;
     margin-bottom: 20px;
+    @media (max-width: $breakpoint480) {
+      margin-bottom: 10px;
+    }
     &:last-child {
       margin-bottom: 0;
     }
@@ -167,5 +170,8 @@ nav {
   .menu__item-link {
     color: white;
     font-size: 28px;
+    @media (max-width: $breakpoint480) {
+      font-size: 18px;
+    }
   }
 }
