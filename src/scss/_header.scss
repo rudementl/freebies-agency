@@ -3,7 +3,6 @@
 
 // Navbar
 nav {
-  background-color: rgba(0, 119, 134, 0.651);
   overflow: hidden;
 }
 
@@ -11,27 +10,56 @@ nav {
   display: flex;
   width: 100%;
   justify-content: space-between;
-  padding-top: 15px;
-  padding-bottom: 15px;
-}
-
-.logo {
-  a {
-    color: white;
-  }
+  align-items: center;
+  padding-top: 25px;
 }
 
 .menu {
   display: flex;
-
+  align-items: center;
+  gap: 0 40px;
   // .menu__item
   &__item {
-    margin-left: 25px;
+    &:last-child {
+      margin-right: 0;
+    }
   }
 
   // .menu__item-link
   &__item-link {
-    color: white;
+    color: #0f2137;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 33px;
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -16px;
+      background-image: url(../img/accent.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      opacity: 0;
+      height: 100%;
+      width: 100%;
+      transition: opacity 0.33s ease;
+    }
+    &:hover {
+      color: #f94962;
+      transition: color 0.33s ease;
+    }
+    &:hover:before {
+      opacity: 1;
+    }
+  }
+
+  &__item-accent {
+    font-weight: 700;
+    color: #f94962;
   }
 }
 
@@ -45,7 +73,7 @@ nav {
   // .menu
   .menu {
     position: fixed;
-    background: #131418;
+    background: #0f2137;
     left: 0;
     top: 0;
     height: 100vh;
@@ -63,7 +91,7 @@ nav {
       justify-content: center;
       align-items: center;
       z-index: 22;
-      animation: fade 0.1s linear;
+      animation: fade 0.2s linear;
     }
   }
 
@@ -78,14 +106,14 @@ nav {
 
     &.active-burger {
       &:before {
-        background: $burgerActiveColor;
+        background: #ffffff;
         transform: rotate(45deg);
         transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.3s all;
         top: 8px;
       }
 
       &:after {
-        background: $burgerActiveColor;
+        background: #ffffff;
         transform: rotate(-45deg);
         bottom: 10px;
         transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.3s all;
@@ -102,7 +130,7 @@ nav {
       position: absolute;
       height: 2px;
       width: 100%;
-      background: $burgerColor;
+      background: #0f2137;
       transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.3s all;
     }
 
@@ -119,7 +147,7 @@ nav {
       top: 9px;
       right: 0;
       width: 100%;
-      background: $burgerColor;
+      background: #0f2137;
       height: 2px;
       transform: scale(1);
       transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.3s all;
@@ -129,10 +157,15 @@ nav {
   // .menu__item
   .menu__item {
     margin-top: 15px;
+    margin-bottom: 20px;
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 
   // .menu__link
   .menu__item-link {
     color: white;
+    font-size: 28px;
   }
 }

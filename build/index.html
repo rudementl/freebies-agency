@@ -16,13 +16,34 @@
 
   <body class="main__body">
     <!-- Header -->
-    @@include('./html/_header.html')
+    <!-- Navbar -->
+<nav>
+  <div class="container">
+    <div class="navbar">
+      <div class="logo">
+        <a href="#"> <img src="../img/logo.svg" alt="header logo" /></a>
+      </div>
+      <ul class="menu">
+        <li class="menu__item"><a href="#" class="menu__item-link">Pricing</a></li>
+        <li class="menu__item"><a href="#" class="menu__item-link">Support</a></li>
+        <li class="menu__item"><a href="#" class="menu__item-link">Register</a></li>
+        <li class="menu__item">
+          <a href="#" class="menu__item-link menu__item-accent">Get Started</a>
+        </li>
+      </ul>
+      <div class="burger">
+        <span></span>
+      </div>
+    </div>
+  </div>
+</nav>
+
 
     <!-- Main Page -->
     <main></main>
 
     <!-- Footer -->
-    <!-- @@include('./html/_footer.html') -->
+    
   </body>
 
   <script src="./js/scripts.min.js"></script>
