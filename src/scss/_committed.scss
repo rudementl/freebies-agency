@@ -2,6 +2,29 @@
   position: relative;
   padding-top: 111px;
   padding-bottom: 180px;
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%) !important;
+    background-image: url(../img/thread.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 600px;
+    height: 360px;
+    @media (max-width: $breakpoint768) {
+      width: 360px;
+      height: 160px;
+      top: -20%;
+    }
+    @media (max-width: $breakpoint480) {
+      width: 230px;
+      height: 120px;
+      top: 0%;
+    }
+  }
   @media (max-width: $breakpoint768) {
     padding-top: 20px;
     padding-bottom: 60px;

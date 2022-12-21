@@ -501,6 +501,22 @@ nav {
   padding-bottom: 180px;
 }
 
+.committed::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) !important;
+      -ms-transform: translate(-50%, -50%) !important;
+          transform: translate(-50%, -50%) !important;
+  background-image: url(../img/thread.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 600px;
+  height: 360px;
+}
+
 .committed__title {
   padding-top: 140px;
   max-width: 690px;
@@ -684,6 +700,12 @@ nav {
 
   .features-img {
     max-width: 500px;
+  }
+
+  .committed::after {
+    width: 360px;
+    height: 160px;
+    top: -20%;
   }
 
   .committed {
@@ -895,13 +917,13 @@ nav {
   }
 
   .hero__background {
-    top: 620px;
+    top: 600px;
     left: 26px;
     max-width: 360px;
   }
 
   .services {
-    padding-top: 360px;
+    padding-top: 400px;
     padding-bottom: 60px;
   }
 
@@ -947,6 +969,12 @@ nav {
   .features-img {
     margin-top: 40px;
     max-width: 260px;
+  }
+
+  .committed::after {
+    width: 230px;
+    height: 120px;
+    top: 0%;
   }
 
   .committed__title {
