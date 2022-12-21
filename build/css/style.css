@@ -316,6 +316,91 @@ nav {
   position: relative;
 }
 
+.services {
+  padding-top: 280px;
+  padding-bottom: 160px;
+}
+
+.services__header {
+  text-align: center;
+  margin-bottom: 140px;
+}
+
+.services__title {
+  font-family: "Bree Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 50px;
+  letter-spacing: -0.5px;
+  color: #0f2137;
+  margin-bottom: 10px;
+}
+
+.services__subtitle {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 35px;
+  color: #0f2137;
+}
+
+.services__card-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.services__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0 30px;
+  width: 385px;
+}
+
+.container__services {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.card__content-title {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #0f2137;
+  margin-bottom: 15px;
+  max-width: 305px;
+}
+
+.card__content-description {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: #343d48;
+  max-width: 305px;
+}
+
 @media (max-width: 1449.98px) {
   .container {
     max-width: 1200px;
@@ -336,6 +421,10 @@ nav {
     max-width: 500px;
     top: 150px;
     right: 80px;
+  }
+
+  .services {
+    padding-top: 560px;
   }
 }
 
@@ -394,6 +483,34 @@ nav {
   .hero__background {
     top: 500px;
     max-width: 390px;
+  }
+
+  .services {
+    padding-top: 500px;
+  }
+
+  .services__title {
+    font-size: 26px;
+    line-height: 42px;
+  }
+
+  .services__subtitle {
+    font-size: 14px;
+    line-height: 27px;
+  }
+
+  .services__card-inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 40px 0;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
 }
 
@@ -592,5 +709,44 @@ nav {
 
   .hero__background {
     top: 620px;
+  }
+
+  .services__header {
+    margin-bottom: 80px;
+  }
+
+  .services__title {
+    font-size: 24px;
+    line-height: 26px;
+    text-align: left;
+  }
+
+  .services__subtitle {
+    font-size: 12px;
+    line-height: 18px;
+    text-align: left;
+  }
+
+  .services__card {
+    width: 300px;
+    gap: 20px 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .card__content-title {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .card__content-description {
+    font-size: 13px;
+    line-height: 22px;
+  }
+
+  .services__card-img {
+    width: 36px;
   }
 }

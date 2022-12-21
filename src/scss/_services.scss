@@ -1,0 +1,124 @@
+.services {
+  padding-top: 280px;
+  padding-bottom: 160px;
+  @media (max-width: $breakpoint1450) {
+    padding-top: 560px;
+  }
+  @media (max-width: $breakpoint768) {
+    padding-top: 500px;
+  }
+  &__header {
+    text-align: center;
+    margin-bottom: 140px;
+    @media (max-width: $breakpoint480) {
+      margin-bottom: 80px;
+    }
+  }
+
+  &__title {
+    font-family: 'Bree Serif';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 50px;
+    letter-spacing: -0.5px;
+    color: #0f2137;
+    margin-bottom: 10px;
+    @media (max-width: $breakpoint768) {
+      font-size: 26px;
+      line-height: 42px;
+    }
+    @media (max-width: $breakpoint480) {
+      font-size: 24px;
+      line-height: 26px;
+      text-align: left;
+    }
+  }
+
+  &__subtitle {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 35px;
+    color: #0f2137;
+    @media (max-width: $breakpoint768) {
+      font-size: 14px;
+      line-height: 27px;
+    }
+    @media (max-width: $breakpoint480) {
+      font-size: 12px;
+      line-height: 18px;
+      text-align: left;
+    }
+  }
+
+  &__card-inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    @media (max-width: $breakpoint768) {
+      flex-direction: column;
+      gap: 40px 0;
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+  }
+
+  &__card {
+    display: flex;
+    gap: 0 30px;
+    width: 385px;
+    @media (max-width: $breakpoint480) {
+      width: 300px;
+      gap: 20px 0;
+      flex-direction: column;
+    }
+  }
+}
+.container {
+  &__services {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+}
+.card {
+  &__content-title {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+    color: #0f2137;
+    margin-bottom: 15px;
+    max-width: 305px;
+    @media (max-width: $breakpoint480) {
+      font-size: 16px;
+      line-height: 22px;
+    }
+  }
+
+  &__content-description {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #343d48;
+    max-width: 305px;
+    @media (max-width: $breakpoint480) {
+      font-size: 13px;
+      line-height: 22px;
+    }
+  }
+}
+
+.services__card-img {
+  @media (max-width: $breakpoint480) {
+    width: 36px;
+  }
+}
