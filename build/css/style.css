@@ -101,6 +101,14 @@ body .text {
   color: #02073e;
 }
 
+body .link {
+  font-family: "DM Sans";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 42px;
+  color: #3183ff;
+}
+
 body.locked {
   overflow: hidden;
 }
@@ -487,6 +495,64 @@ nav {
           align-items: flex-start;
 }
 
+.committed {
+  position: relative;
+  padding-top: 111px;
+  padding-bottom: 180px;
+}
+
+.committed__title {
+  padding-top: 140px;
+  max-width: 690px;
+  margin-bottom: 13px;
+  font-family: "Bree Serif";
+}
+
+.committed__text {
+  max-width: 490px;
+  margin-bottom: 25px;
+}
+
+.committed__details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0 11px;
+}
+
+.container__committed {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.committed-img {
+  background-image: url(../img/committed-bg.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  right: -200px;
+}
+
+.committed-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
 @media (max-width: 1449.98px) {
   .container {
     max-width: 1200px;
@@ -515,6 +581,12 @@ nav {
 
   .features__inner {
     gap: 0 60px;
+  }
+
+  .committed-img {
+    top: 560px;
+    max-width: 580px;
+    left: 0;
   }
 }
 
@@ -612,6 +684,20 @@ nav {
 
   .features-img {
     max-width: 500px;
+  }
+
+  .committed {
+    padding-top: 20px;
+    padding-bottom: 60px;
+  }
+
+  .committed__title {
+    padding-top: 60px;
+  }
+
+  .committed-img {
+    top: 420px;
+    max-width: 360px;
   }
 }
 
@@ -860,6 +946,19 @@ nav {
 
   .features-img {
     margin-top: 40px;
+    max-width: 260px;
+  }
+
+  .committed__title {
+    width: 300px;
+  }
+
+  .committed__text {
+    width: 300px;
+  }
+
+  .committed-img {
+    top: 320px;
     max-width: 260px;
   }
 }

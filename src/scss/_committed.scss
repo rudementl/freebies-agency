@@ -1,0 +1,69 @@
+.committed {
+  position: relative;
+  padding-top: 111px;
+  padding-bottom: 180px;
+  @media (max-width: $breakpoint768) {
+    padding-top: 20px;
+    padding-bottom: 60px;
+  }
+
+  &__title {
+    padding-top: 140px;
+    max-width: 690px;
+    margin-bottom: 13px;
+    font-family: 'Bree Serif';
+    @media (max-width: $breakpoint768) {
+      padding-top: 60px;
+    }
+    @media (max-width: $breakpoint480) {
+      width: 300px;
+    }
+  }
+
+  &__text {
+    max-width: 490px;
+    margin-bottom: 25px;
+    @media (max-width: $breakpoint480) {
+      width: 300px;
+    }
+  }
+
+  &__details {
+    display: flex;
+    align-items: center;
+    gap: 0 11px;
+  }
+}
+.container {
+  &__committed {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+}
+.committed-img {
+  background-image: url(../img/committed-bg.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  right: -200px;
+  @media (max-width: $breakpoint1450) {
+    top: 560px;
+    max-width: 580px;
+    left: 0;
+  }
+  @media (max-width: $breakpoint768) {
+    top: 420px;
+    max-width: 360px;
+  }
+  @media (max-width: $breakpoint480) {
+    top: 320px;
+    max-width: 260px;
+  }
+}
+.committed-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
