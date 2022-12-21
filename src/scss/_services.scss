@@ -7,6 +7,10 @@
   @media (max-width: $breakpoint768) {
     padding-top: 500px;
   }
+  @media (max-width: $breakpoint480) {
+    padding-top: 360px;
+    padding-bottom: 60px;
+  }
   &__header {
     text-align: center;
     margin-bottom: 140px;

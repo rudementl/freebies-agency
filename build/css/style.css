@@ -401,6 +401,92 @@ nav {
   max-width: 305px;
 }
 
+.features {
+  background-color: #f9fafc;
+  padding-top: 66px;
+  padding-bottom: 220px;
+}
+
+.features__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0 140px;
+}
+
+.features__title {
+  font-size: 40px;
+  line-height: 60px;
+  letter-spacing: -0.5px;
+  max-width: 780px;
+  margin-bottom: 25px;
+  padding-top: 60px;
+}
+
+.features__text {
+  max-width: 470px;
+  margin-bottom: 25px;
+}
+
+.features__details {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 42px;
+  color: #3183ff;
+  gap: 0 11px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.features__complite {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0 11px;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 45px;
+  color: #02073e;
+}
+
+.features__complite-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 25px;
+}
+
+.features-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
 @media (max-width: 1449.98px) {
   .container {
     max-width: 1200px;
@@ -426,6 +512,10 @@ nav {
   .services {
     padding-top: 560px;
   }
+
+  .features__inner {
+    gap: 0 60px;
+  }
 }
 
 @media (max-width: 991.98px) {
@@ -437,6 +527,13 @@ nav {
     max-width: 460px;
     left: 0px;
     top: 700px;
+  }
+
+  .features__inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
   }
 }
 
@@ -511,6 +608,10 @@ nav {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+  }
+
+  .features-img {
+    max-width: 500px;
   }
 }
 
@@ -709,6 +810,13 @@ nav {
 
   .hero__background {
     top: 620px;
+    left: 26px;
+    max-width: 360px;
+  }
+
+  .services {
+    padding-top: 360px;
+    padding-bottom: 60px;
   }
 
   .services__header {
@@ -748,5 +856,10 @@ nav {
 
   .services__card-img {
     width: 36px;
+  }
+
+  .features-img {
+    margin-top: 40px;
+    max-width: 260px;
   }
 }
