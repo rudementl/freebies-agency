@@ -71,13 +71,15 @@
   position: absolute;
   right: -200px;
   @media (max-width: $breakpoint1450) {
-    top: 560px;
-    max-width: 580px;
+    max-width: 460px;
+    right: 40px;
+    top: 520px;
     left: 0;
   }
   @media (max-width: $breakpoint768) {
-    top: 420px;
-    max-width: 360px;
+    left: 0;
+    top: 350px;
+    max-width: 320px;
   }
   @media (max-width: $breakpoint480) {
     top: 320px;
