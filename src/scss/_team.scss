@@ -1,0 +1,159 @@
+.team {
+  padding-top: 106px;
+  padding-bottom: 52px;
+  &__content {
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__title {
+    font-size: 40px;
+    line-height: 60px;
+    max-width: 920px;
+    margin-bottom: 25px;
+  }
+
+  &__subtitle {
+    font-size: 16px;
+    line-height: 35px;
+    max-width: 600px;
+  }
+
+  &__item {
+    background-color: #183656;
+    max-width: 1290px;
+    min-height: 200px;
+    border-radius: 16px;
+    padding: 50px 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    @media (max-width: $breakpoint768) {
+      padding: 40px 40px;
+      min-height: 150px;
+    }
+    @media (max-width: $breakpoint480) {
+      flex-direction: column;
+      gap: 30px 0;
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      top: 40px;
+      right: 440px;
+      background-image: url(../img/decor-03.svg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 250px;
+      height: 120px;
+      @media (max-width: $breakpoint1450) {
+        right: 360px;
+      }
+      @media (max-width: $breakpoint768) {
+        right: 280px;
+        top: 20px;
+      }
+      @media (max-width: $breakpoint480) {
+        right: 200px;
+        top: 5px;
+      }
+    }
+    &_text {
+      font-family: 'Bree Serif';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 36px;
+      line-height: 55px;
+      display: flex;
+      align-items: center;
+      letter-spacing: -0.5px;
+      color: #ffffff;
+      max-width: 490px;
+      @media (max-width: $breakpoint1450) {
+        font-size: 26px;
+        line-height: 42px;
+      }
+      @media (max-width: $breakpoint992) {
+        font-size: 22px;
+        line-height: 32px;
+        max-width: 250px;
+      }
+      @media (max-width: $breakpoint768) {
+        font-size: 18px;
+        line-height: 24px;
+        max-width: 220px;
+      }
+    }
+
+    &_contact {
+      font-family: 'DM Sans';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 17px;
+      line-height: 22px;
+      text-align: center;
+      letter-spacing: 0.1em;
+      color: #183656;
+      padding: 20px 42px;
+      text-transform: uppercase;
+      background-color: #fff;
+      position: relative;
+      border-radius: 10px;
+      transition: background-color 0.33s ease;
+      &:hover {
+        background-color: rgb(215, 215, 215);
+      }
+      @media (max-width: $breakpoint1450) {
+        font-size: 16px;
+        line-height: 20px;
+      }
+      @media (max-width: $breakpoint992) {
+        font-size: 13px;
+        line-height: 18px;
+      }
+      @media (max-width: $breakpoint768) {
+        font-size: 14px;
+        padding: 16px 18px;
+      }
+      @media (max-width: $breakpoint480) {
+        width: 100%;
+        margin-top: 14px;
+      }
+      &::after {
+        content: '';
+        position: absolute;
+        top: -24px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-image: url(../img/decor-01.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 75px;
+        height: 25px;
+        @media (max-width: $breakpoint768) {
+          top: -21px;
+        }
+      }
+      &::before {
+        content: '';
+        position: absolute;
+        bottom: -48px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-image: url(../img/decor-02.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 75px;
+        height: 25px;
+        @media (max-width: $breakpoint768) {
+          bottom: -45px;
+        }
+      }
+    }
+  }
+}
