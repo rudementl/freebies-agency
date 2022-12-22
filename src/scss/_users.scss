@@ -15,11 +15,15 @@
   }
 
   &__header {
+    margin-bottom: 80px;
     &_title {
       max-width: 960px;
       margin: 0 auto;
       margin-bottom: 25px;
       text-align: center;
+      @media (max-width: $breakpoint992) {
+        text-align: left;
+      }
     }
 
     &_subtitle {
@@ -27,6 +31,10 @@
       margin: 0 auto;
       margin-bottom: 110px;
       text-align: center;
+      @media (max-width: $breakpoint992) {
+        text-align: left;
+        margin: 0;
+      }
     }
   }
 
